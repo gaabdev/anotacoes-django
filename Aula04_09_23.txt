@@ -1,0 +1,15 @@
+
+
+Quando criar um projeto django, o ponto no final evita que seja criado um subdiretório.
+
+Arquivo manage.py
+
+-Gerenciamento aplicação
+-Executa comando servidor django
+
+
+Arquivo __init__
+
+Arquivo settings.py
+
+- Configurações do projeto

@@ -1,0 +1,3 @@
+Criação de apps
+
+django-admin startapp <nome do projeto>

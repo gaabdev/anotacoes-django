@@ -1,0 +1,42 @@
+Views no django e arquivo Views
+
+DEBUG = False
+
+Uma view é uma função que recebe parametros
+Recebe uma renderização em request e passa como parâmetro o arquivo
+Ex.
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'index.html')
+
+ROTAS NO DJANGO E ARQUIVO URLS.PY
+
+importando das aplicações para o projeto
+
+from core.views import index, contato
+
+urlpatterns
+
+path('', index),
+path('contato', contato),
+
+Não é recomendado colocar todos os arquivos de rotas no arquivo urls.py do projeto
+
+Deve-se criar um arquivo urls.py na aplicação 
+from django.urls import path
+from .urls import index, contato
+
+urlpatterns = [
+	path('', index)
+
+código arquivos rotas urls.py
+adicionar include depois de path
+
+path('', include('core.urls')),
+
+
+TEMPLATES NO DJANGO
+
+Criar pasta templates na aplicação
+
